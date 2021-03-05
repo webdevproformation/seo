@@ -46,3 +46,185 @@ git commit -m "commentaire"
 git push origin gh-pages
 
 => la mis à jour prend 1 min maximum + vider le cache du navigateur 
+
+
+------------------------
+
+robots.txt 
+
+User-agent: *
+Allow: /
+
+Sitemap: https://webdevproformation.github.io/seo/sitemap.xml
+
+------------------------
+
+sitemap generator => https://www.xml-sitemaps.com/
+
+------------------------
+
+pour pouvoir suivre au quotidien l'activité le volume de trafic de votre site 
+
+=> google analytics 
+
+=> pour pouvoir l'utiliser, il faut au préalable que votre site internet soit en ligne 
+=> vous ne pouvez pas expérimenter Google Analytics si vous avez un projet en local (github page comme hébergement)
+
+=> une fois que le projet est en ligne 
+=> compte gmail => connecté => sur le damier en haut à droite
+=> liste de tous les produits de google => sélectionner Google Analytics 
+
+=> une fois arrivé sur Google analytics 
+
+=> vous pouvez suivre l'activité de 100 sites internets simultanément 
+=> une fois le compte créé  
+
+=> ce bout de javascript => vous devez le mettre dans chaque page dans lesquels vous souhaitez avoir un suivi de l'activité 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4J7H737PN"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-Q4J7H737PN');
+</script>
+
+=> remettre en ligne la ou les pages html sur l'hébergeur 
+
+=> vous allez dans Google analytics => vous allez dans le menu temps réel 
+=> si vous voyez un chiffre apparait => 1 => c'est bon votre site est suivi désormais par google analytics 
+
+=> suivre l'activité  => comment les gens vivent dans ton site 
+
+responsive design => quels sont les mots clés 
+
+1 google analytics
+
+2 google keywordplanner => evaluer les mots clés 
+
+3 google webmastertool 
+
+=> bon appétit rdv 13h40 => bon appétit !! 
+
+cd dossier-projet
+
+git init
+git add *
+git commit -m "commentaire"
+git remove add origin https://....git
+git branch gh-pages 
+git checkout gh-pages 
+git push origin gh-pages 
+
+// si vous réalisez une modification sur l'un des fichiers index.html / style.css / robots ... 
+// Enregistrer Ctrl + S 
+
+// mis à jour sur l'hébergeur github
+
+git add *
+git commit -m "commentaire sur la modification"
+git push origin gh-pages 
+
+
+// créer un projet / mis en ligne / 
+// créer un compte Google Analytics / js / projet / fonctionnelle 
+
+// dès qu'un internaute va venir regarder votre page => exécuter le js (tracker => envoyer des informations sur l'utilisateur )
+
+// étant donné que l'on vient 
+
+// sur mon google analytics => j'ai ajouté un suivi sur mon site principal 
+
+// je vais utiliser le tracker sur mon site principal => webdevpro.net 
+// google analytics 
+
+// il est possible de passer d'un site vers un autre 
+
+=> 5 types de rapports :
+=> temps réel => permet de savoir l'activité du site Maintenant
+=> Audience => tableau de bord les indicateurs globaux sur l'activité le site 
+=> Acquisition => comment les internautes arrivent sur votre site 
+                    connaissent l'adresse et vont la saisir dans la barre d'adresse 
+                    moteur de recherche
+                    backlink
+=> Comportement => quelles sont les pages qui attirent le plus les internautes / le temps moyen qu'ils passent sur le site ... 
+=> Conversion => Objectifs => déterminer combien d'internautes vont utiliser un formulaire d'inscription à la newsletter 
+
+=> vue d'ensemble de l'activité de votre site 
+
+Audience > Vue d'ensemble > 
+
+Nombre d'utilisateur :
+Taux de rebond : le nombre d'internaute qui ont visité 1 seule page dans votre site / nombre total d'internautes
+
+sur 10 internautes => 9 qui regarde 1 page et qui partent 
+
+plus le taux tend vers 100% et moins le site a la capacité de garder les internautes pour qu'ils regardent plusieurs pages de votre site 
+
+=> pour les sites d'information / blog => 70% => sur 10 internautes au moins 3 regardent plusieurs pages de votre site 
+
+=> pour les sites e commerce => 50% => 1 internaute sur 2 regarde plusieurs pages de votre site 
+
+=> nouveau utilisateur / utilisateur qui revienne 
+=> etant que vous avez installer le tracker => en + d'envoyer des données à google analytics 
+=> mettre un cookie de navigateur sur votre navigateur 
+
+=> comment trouver où est le cookie google analytics ?? 
+
+---------------- 
+
+=> requête HTTP ?? 
+navigateur => adresse dans la barre d'adresse => requête http 
+en + de l'adresse le navigateur va compléter cette demande avec des informations sur le client (navigateur)
+
+le navigateur envoie au serveur un entête pour requête => 
+langue du systeme 
+système d'exploitation
+ip 
+le nom du navigateur 
+
+//-------------------------
+
+Acquisition 
+
+A connaissent l'adresse et vont la saisir dans la barre d'adresse => Direct 5%
+B moteur de recherche => Organic Search 94%
+C backlink =>  1% back link  Referral / Social campagne de backlinking depuis un site externe vers votre site 
+
+=> SEO le mieux 
+33.3% => connaissent l'adresse
+33.3% => moteur de recherche
+33.3% => backlink
+
+//-------------------------
+
+Comportement 
+
+=> qu'elles sont les pages qui intéressent le plus les internautes ? 
+
+liste des 10 pages les plus consultées dans votre site 
+
+la page qui a l'adresse / => la page d'accueil de votre site internet 
+
+
+//-------------------------
+
+mettre en place un objectif
+
+=> tunnel de conversion ?? 
+
+le fait de transformer un internaute en un acheteur 
+
+acheteur va réaliser une action attendu dans votre site, par exemple => remplir un formulaire 
+
+=> cas pratique :
+
+ajouter un formulaire entre image et le pied de page 
+
+formulaire 
+    méthode GET 
+    input de type email 
+    input de submit 
+
+=> le mettre en ligne sur github page 
+
