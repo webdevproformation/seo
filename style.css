@@ -1,0 +1,128 @@
+html,body{
+    margin: 0;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 700px;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-top .menu-item{
+    flex-basis: 50%;
+}
+
+.menu-bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-bottom .menu-item{
+    flex-basis: 25%;
+}
+.menu{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 5px;
+}
+
+.menu-link{
+    display: block;
+    background: #ff9292;
+    padding: 10px 0;
+    color:#ffe8e8;
+    font-size: 1.4em;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.menu-top .menu-item:first-child .menu-link{
+    border-top-left-radius: 5px;
+}
+
+.menu-top .menu-item:nth-child(2) .menu-link{
+    border-top-right-radius: 5px;
+}
+
+.menu-bottom .menu-item:first-child .menu-link{
+    border-bottom-left-radius: 5px;
+}
+
+.menu-bottom .menu-item:last-child .menu-link{
+    border-bottom-right-radius: 5px;
+}
+
+/* fin menu */
+
+h1{
+    margin: 20px 0;
+    padding: 10px;
+    background: #aaa;
+    border-radius: 5px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+section article{
+    flex-basis: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+section article:last-child{
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.image-principale{
+    padding: 20px;
+    background: #aaa;
+    max-width: calc(100% - 40px);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* fin partie centrale*/
+
+footer{
+    text-align: center;
+    background: #aaa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* bon café => rdv dans 15 min 10h50 bon café @ toute suite !!!   */
