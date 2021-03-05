@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webdevproformation.github.io/seo/sitemap.xml
